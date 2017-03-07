@@ -1,4 +1,4 @@
-# Arduino-Weas
+# Clap-Light
 Newbie Arduino Development
 
 This is a simple and personal project. The idea is create a circuit by using an arduino board which turns on or off
