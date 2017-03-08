@@ -1,5 +1,5 @@
 /* Programming Language: Arduino
- * Autor: Alkeindem
+ * Author: Alkeindem
  *
  *  -*-LED Connection (220 Ohm resistance)
  *  - GND --> Short Stick
@@ -25,7 +25,7 @@ void setup() {
 void loop() {
   if (digitalRead(2) != 0) {    // If detects a sound
 
-    // Sistema de turnos para encendido o apagado
+    // Turning ON and OFF system
         
     if (estado == false) {      // Turning LED ON
       digitalWrite(10, HIGH);
