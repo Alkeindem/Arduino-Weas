@@ -1,0 +1,40 @@
+/* Programming Language: Arduino
+ * Autor: Alkeindem
+ *
+ *  -*-LED Connection (220 Ohm resistance)
+ *  - GND --> Short Stick
+ *  - Pin 10 --> Long Stick
+ *  
+ *  -*- Conexion Sound Sensor
+ *  - GND --> G
+ *  - 5V --> +
+ *  - Pin 2 --> DO
+ */
+// Variables
+
+bool state = false;           // LED Status
+int tempo = 100;              // Time for delay()
+
+// Main Block
+
+void setup() {
+  pinMode(2, INPUT);      // Activate pins 2 y 10
+  pinMode(10, OUTPUT);
+}
+
+void loop() {
+  if (digitalRead(2) != 0) {    // If detects a sound
+
+    // Sistema de turnos para encendido o apagado
+        
+    if (estado == false) {      // Turning LED ON
+      digitalWrite(10, HIGH);
+      state = true;
+      delay(tempo);   }
+             
+    else {                      // Turning LED OFF
+      digitalWrite(10, LOW);
+      state = false;
+      delay(tempo); }      
+    }
+  }
